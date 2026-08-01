@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "title_id": "555307D4",
+  "media_id": "59A9DD10",
+  "files": [
+    {"xbox": "Data360.forge", "pc": "DataPC.forge", "text_entries": ["Game Bootstrap Settings"], "audio": "localized"},
+    {"xbox": "Data360_Acre.forge", "pc": "DataPC_Acre.forge", "text_entries": ["Cell01364_DataBlock"], "audio": "full"},
+    {"xbox": "Data360_Arsuf.forge", "pc": "DataPC_Arsuf.forge", "text_entries": ["Cell21844_DataBlock"], "audio": "full"},
+    {"xbox": "Data360_Assassination_Talal.forge", "pc": "DataPC_Assassination_Talal.forge", "text_entries": ["Cell01364_DataBlock"], "audio": "full", "retains_language_bank": true},
+    {"xbox": "Data360_Damascus.forge", "pc": "DataPC_Damascus.forge", "text_entries": ["Cell01364_DataBlock"], "audio": "full"},
+    {"xbox": "Data360_Extra.forge", "pc": "DataPC_Extra.forge", "text_entries": [], "audio": "none"},
+    {"xbox": "Data360_Flashback_Paradise.forge", "pc": "DataPC_Flashback_Paradise.forge", "text_entries": ["Cell00340_DataBlock"], "audio": "full"},
+    {"xbox": "Data360_Jerusalem.forge", "pc": "DataPC_Jerusalem.forge", "text_entries": ["Cell01364_DataBlock"], "audio": "full"},
+    {"xbox": "Data360_Kingdom.forge", "pc": "DataPC_Kingdom.forge", "text_entries": ["Cell05460_DataBlock"], "audio": "full"},
+    {"xbox": "Data360_LoadingRoom2.forge", "pc": "DataPC_LoadingRoom2.forge", "text_entries": ["Cell00010_DataBlock"], "audio": "full"},
+    {"xbox": "Data360_Map_Menu.forge", "pc": "DataPC_Map_Menu.forge", "text_entries": [], "audio": "none", "core_ui": true},
+    {"xbox": "Data360_Masyaf.forge", "pc": "DataPC_Masyaf.forge", "text_entries": ["Cell05460_DataBlock"], "audio": "full"},
+    {"xbox": "Data360_Memory_Corridor.forge", "pc": "DataPC_Memory_Corridor.forge", "text_entries": ["Cell00084_DataBlock"], "audio": "full"},
+    {"xbox": "Data360_Present_Room.forge", "pc": "DataPC_Present_Room.forge", "text_entries": ["Cell00084_DataBlock", "Cell00019_DataBlock", "Cell00027_DataBlock"], "audio": "full", "core_ui": true},
+    {"xbox": "Data360_SolomonTemple.forge", "pc": "DataPC_SolomonTemple.forge", "text_entries": ["Cell00340_DataBlock"], "audio": "full", "externalize_solomon": true},
+    {"xbox": "Data360_StreamedSoundsEng.forge", "pc": "DataPC_StreamedSoundscze.forge", "text_entries": [], "audio": "language_bank"}
+  ],
+  "solomon_resources": [
+    "BAO_0x20b11043",
+    "BAO_0x20b1187d",
+    "BAO_0x20b1187c",
+    "BAO_0x20b1187a",
+    "BAO_0x20b11879"
+  ],
+  "timeline_replacements": [
+    "Memory Block 1=Blok paměti 1",
+    "Memory Block 2=Blok paměti 2",
+    "Memory Block 3=Blok paměti 3",
+    "Memory Block 4=Blok paměti 4",
+    "Memory Block 5=Blok paměti 5",
+    "Memory Block 6=Blok paměti 6",
+    "Memory Block 7=Blok paměti 7",
+    "Solomon's Temple=Šalamounův chrám",
+    "Jerusalem=Jeruzalém"
+  ],
+  "exit_replacements": [
+    "Are you sure you want to exit?=Opravdu ukončit hru?",
+    "Any unsaved progress will be lost.=Neuložený postup bude ztracen."
+  ]
+}

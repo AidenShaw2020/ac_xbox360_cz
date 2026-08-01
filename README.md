@@ -41,7 +41,46 @@ Python závislost pro nástroje pracující s fonty nainstalujete příkazem:
 python -m pip install -r requirements.txt
 ```
 
-Technický postup je v [docs/BUILD_FROM_CLEAN.md](docs/BUILD_FROM_CLEAN.md).
+## Automatické sestavení jedním BAT
+
+Pro běžné použití spusťte `Rebuild_AC1_CZ_From_Clean.bat`. Bez parametrů se
+zobrazí interaktivní průvodce, který si vyžádá pět cest. Patcher zdrojové soubory
+nemění a hotové archivy uloží do nové složky `Ready_To_Copy`.
+
+Lze jej spustit také plně parametricky:
+
+```bat
+Rebuild_AC1_CZ_From_Clean.bat ^
+  "D:\Xbox Games\Assassins Creed Clean" ^
+  "D:\Games\Assassin's Creed" ^
+  "D:\AC1_X360_CZ_Rebuilt" ^
+  "C:\Tools\ffmpeg.exe" ^
+  "C:\Tools\xma2encode.exe"
+```
+
+Parametry v pořadí:
+
+1. kořen čisté rozbalené Xbox 360 hry;
+2. kořen české PC instalace;
+3. nový nebo prázdný výstupní adresář;
+4. cesta k `ffmpeg.exe`;
+5. cesta k `xma2encode.exe`;
+6. volitelně `--plan-only` pro kontrolu vstupů bez sestavení, nebo `--resume`
+   pro pokračování po přerušení ve stejném výstupu.
+
+Výstup obsahuje:
+
+- `Ready_To_Copy` – hotové `.forge` soubory určené ke zkopírování do kořene hry;
+- `_build/build.log` – úplný protokol;
+- `_build/reports` – dílčí ověřovací reporty;
+- `validation.json` – konečnou strukturální a hashovou kontrolu.
+
+Sestavení dabingu je časově i prostorově náročné. Doporučuje se alespoň 35 GiB
+volného místa. Při přerušení spusťte stejný příkaz znovu s `--resume`; hotové
+oblasti se přeskočí.
+
+Podrobný vývojářský a ruční postup je v
+[docs/BUILD_FROM_CLEAN.md](docs/BUILD_FROM_CLEAN.md).
 
 ## Instalace hotové soukromé sady
 
@@ -56,6 +95,7 @@ podle jeho `README_COMPLETE_CZ.md`. Stručně:
 
 ## Obsah repozitáře
 
+- `Rebuild_AC1_CZ_From_Clean.bat` – doporučený automatický patcher;
 - `tools/` – převod, bezpečné přestavování FORGE/MGB a diagnostika BAO;
 - `bin/` – otevřený nativní dekodér Xbox XMem/LZX a jeho zdroj;
 - `scripts/` – kontrola vstupů, instalace a ověření výsledků;

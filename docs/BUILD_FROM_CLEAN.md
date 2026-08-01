@@ -1,8 +1,12 @@
 # Sestavení z čistých originálů
 
-Tento dokument popisuje vývojářský postup použitý pro finální testovanou sestavu.
-Nejde o jediné univerzální tlačítko: archivy FORGE obsahují fyzické odkazy a některé
-zdroje vyžadují individuální bezpečné umístění. Skripty proto vždy spouštějte nad
+Pro běžné sestavení použijte `Rebuild_AC1_CZ_From_Clean.bat` v kořeni
+repozitáře. Obsahuje ověřenou posloupnost všech níže popsaných kroků, kontroluje
+vstupy a podporuje pokračování pomocí `--resume`.
+
+Tento dokument zachovává podrobný vývojářský a ruční postup použitý pro finální
+testovanou sestavu. Archivy FORGE obsahují fyzické odkazy a některé zdroje
+vyžadují individuální bezpečné umístění. Ruční skripty proto vždy spouštějte nad
 kopiemi a po každé oblasti kontrolujte report.
 
 ## Požadavky
