@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+input/
+output/
+cache/
+*.forge
+*.xex
+*.xexp
+*.wav
+*.xma
+*.bao
+codex.tmp

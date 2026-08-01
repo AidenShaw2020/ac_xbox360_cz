@@ -1,0 +1,59 @@
+# Assassin's Creed 1 Xbox 360 raw FORGE entry decompressor
+# Adapted for the big-endian compressed-chunk wrapper used by Data360 archives.
+
+endian big
+math GUESSED_CHUNKS_SIZE = 2
+get ARCHIVE_SIZE asize
+math i = 0
+
+for OFFSET = 0 != ARCHIVE_SIZE
+    findloc OFFSET binary "\x10\x04\xfa\x99\x57\xfb\xaa\x33"
+    math OFFSET + 8
+    goto OFFSET
+
+    get VER short
+    get TYPE byte
+    if TYPE == 3
+        comtype xmemlzx
+    elif TYPE <= 1
+        comtype lzo1x
+    elif TYPE == 2
+        comtype lzo2a
+    elif TYPE == 5
+        comtype lzo1c
+    else
+        print "Unknown Xbox compression type %TYPE%"
+        cleanexit
+    endif
+
+    get MIN_SIZE short
+    get MAX_SIZE short
+    get CHUNKS short
+
+    get NAME basename
+    string NAME p "%s/%d.dat" NAME i
+    log NAME 0 0
+    append
+
+    for x = 0 < CHUNKS
+        get SIZE short
+        get ZSIZE short
+        putarray 0 x SIZE
+        putarray 1 x ZSIZE
+    next x
+
+    savepos OFFSET
+    for x = 0 < CHUNKS
+        math OFFSET + 4
+        getarray SIZE 0 x
+        getarray ZSIZE 1 x
+        if ZSIZE == SIZE
+            log NAME OFFSET ZSIZE
+        else
+            clog NAME OFFSET ZSIZE SIZE
+        endif
+        math OFFSET + ZSIZE
+    next x
+    append
+    goto OFFSET
+next i

@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "title_id": "555307D4",
+  "media_id": "59A9DD10",
+  "file_count": 16,
+  "total_size": 9143255583,
+  "files": [
+    {
+      "name": "Data360.forge",
+      "size": 273638096,
+      "sha256": "6e54d3e3398cdacde06bb9fe074e7ca5ebf18ef24953ef19b2c4aaa6f6818744"
+    },
+    {
+      "name": "Data360_Acre.forge",
+      "size": 1413624914,
+      "sha256": "b204d3091e9f66f2236166dd3c73384fa2939cd2ec371c1e7d840a539347fbbb"
+    },
+    {
+      "name": "Data360_Arsuf.forge",
+      "size": 574781512,
+      "sha256": "c305b10f7d3f9071436ae0a5b6bce64aa7a8d62915bfbadb601518a7c23f50ca"
+    },
+    {
+      "name": "Data360_Assassination_Talal.forge",
+      "size": 174462341,
+      "sha256": "2c24725e265c361b2f8b3630951c9a07d213fae35d644c626b7c83cdaa95339d"
+    },
+    {
+      "name": "Data360_Damascus.forge",
+      "size": 1354942838,
+      "sha256": "cb40d4f4b14ef1bd0655228790223d975b005ed08a2b7983a963df30b032025f"
+    },
+    {
+      "name": "Data360_Extra.forge",
+      "size": 20840448,
+      "sha256": "4ace8c974e70023fd4783c66959ee5171cacfffe35e0fbcae1935e133de29873"
+    },
+    {
+      "name": "Data360_Flashback_Paradise.forge",
+      "size": 331698682,
+      "sha256": "cd4e5660fd9dd045c32694b0ac9cd51c84d2786d69c99d78144fccf2f0dd9c7f"
+    },
+    {
+      "name": "Data360_Jerusalem.forge",
+      "size": 1351317894,
+      "sha256": "4c1f086d82a2cc24899605fdc1472af77d0d87df5193081f7af9bbd7a9c3277a"
+    },
+    {
+      "name": "Data360_Kingdom.forge",
+      "size": 1174315355,
+      "sha256": "a251432333f5f7f594812ab6af10a42f32a31db628029f08010b6f25f7a5c339"
+    },
+    {
+      "name": "Data360_LoadingRoom2.forge",
+      "size": 19318666,
+      "sha256": "b1c94f81e63e3ca8407f8b2a09fd9a9d9a25c4eb6213646f42841f967a95d833"
+    },
+    {
+      "name": "Data360_Map_Menu.forge",
+      "size": 1820444,
+      "sha256": "115af3cf9fbb9738d5b747120a1a8ad0bd68d63ac941e04de7076f97ba13ac62"
+    },
+    {
+      "name": "Data360_Masyaf.forge",
+      "size": 1272416534,
+      "sha256": "4ba3a03069630dceea8cd9e13b24d314549ef5e66a1490b0550000cd42d3a154"
+    },
+    {
+      "name": "Data360_Memory_Corridor.forge",
+      "size": 245758706,
+      "sha256": "3afc65072fa8952106a1b18690930ae8db9b6f36783ddf4213a7b142ff410264"
+    },
+    {
+      "name": "Data360_Present_Room.forge",
+      "size": 500446654,
+      "sha256": "df1d0e8b4b2510d3c6542fe7a539fb84c5f74f77a36661e7829b29d0977521b6"
+    },
+    {
+      "name": "Data360_SolomonTemple.forge",
+      "size": 328385814,
+      "sha256": "bdc0eca50446537c43969a23ab235203fb37104abdd3bb60a06b7dca82021312"
+    },
+    {
+      "name": "Data360_StreamedSoundsEng.forge",
+      "size": 105486685,
+      "sha256": "2fb91365711e7c16b050878bb1fb31f99f487c6f3dae23de3b29b17db131a9cf"
+    }
+  ]
+}

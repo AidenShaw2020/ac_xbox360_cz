@@ -1,0 +1,19 @@
+# Compress an input stream as independent 32 KiB Xbox XMem/LZX chunks.
+
+comtype xmemlzx_compress
+get TOTAL_SIZE asize
+math OFFSET = 0
+math INDEX = 0
+
+for OFFSET = 0 < TOTAL_SIZE
+    math SIZE = TOTAL_SIZE
+    math SIZE - OFFSET
+    if SIZE > 0x8000
+        math SIZE = 0x8000
+    endif
+
+    string NAME p "%05d.bin" INDEX
+    clog NAME OFFSET SIZE SIZE
+
+    math OFFSET + SIZE
+next INDEX
